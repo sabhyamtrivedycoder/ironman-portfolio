@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SABHAYM TRIVEDI // THE INVINCIBLE ARCHITECT - IRON MAN COMIC PORTFOLIO</title>
+  
+  <meta name="description" content="Official portfolio of Sabhaym Trivedi, a 14-year-old software engineer and founder from Jharkhand, India. Forging autonomous agent swarms, spatial AI, and full-stack platforms in Iron Man comic book style.">
+  <meta name="author" content="Sabhaym Trivedi">
+  <meta name="theme-color" content="#b91c1c">
+
+  <!-- Favicons and App Badges -->
+  <link rel="icon" type="image/png" href="favicon.png?v=8.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=8.0">
+  <link rel="apple-touch-icon" href="assets/logo-badge.png?v=8.0">
+
+  <!-- Google Fonts: Comic Bangers, Comic Neue, Luckiest Guy, Stark Orbitron & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js r128 CDN for 3D Arc Reactor Simulation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Iron Man Comic Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Halftone Ben-Day Dots Visual Screen -->
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <!-- Stark Industries Top Navigation Bar -->
+  <header class="stark-nav">
+    <div class="stark-nav-inner">
+      <a href="#hero" class="brand-badge-link" title="Sabhaym Trivedi // Command Core">
+        <img src="assets/logo-badge.png" alt="Sabhaym Trivedi STI Monogram Badge" class="brand-badge-img">
+        <div class="brand-badge-text">
+          <span class="brand-name">SABHAYM</span>
+          <span class="brand-sub">STARK TECH LABS</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">ISSUE #1</a></li>
+          <li><a href="#origin" class="nav-link">ORIGIN</a></li>
+          <li><a href="#armory" class="nav-link">ARMORY</a></li>
+          <li><a href="#vault" class="nav-link">ARMOR VAULT</a></li>
+          <li><a href="#intel" class="nav-link">INTEL</a></li>
+          <li><a href="#comms" class="nav-link">COMMS</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="stark-btn-mini" title="Toggle Stark Procedural Audio">AUDIO: STANDBY</button>
+        <button id="overcharge-repulsor-btn" class="stark-btn-mini" style="border-color: #ffd166; color: #ffd166;" title="Fire 3D Repulsor Pulse">REPULSOR</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION - THE INVINCIBLE SABHAYM (ISSUE #1)
+       ======================================================================== -->
+  <section id="hero" class="hero-issue-section">
+    <div class="container">
+
+      <!-- Comic Book Issue Header Ribbon -->
+      <div class="comic-issue-banner">
+        <div class="issue-banner-left">
+          <div class="issue-number-badge">NO. 1</div>
+          <div class="issue-title-text">THE INVINCIBLE ARCHITECT</div>
+        </div>
+        <div class="issue-banner-right">
+          <span>VOL. 1 • JHARKHAND SPECIAL</span>
+          <div class="code-authority-seal">
+            COMICS<br>CODE<br>AUTHORITY
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        
+        <!-- Left Column: Comic Narrative & Editorial Headers -->
+        <div class="hero-editorial-column">
+          <div class="comic-caption-box">
+            MEANWHILE, DEEP IN THE WORKSHOP OF JHARKHAND...
+          </div>
+
+          <h1 class="hero-comic-title">SABHAYM TRIVEDI</h1>
+
+          <div class="hero-subtitle-bar">
+            <span class="hero-pill-tag">14-YEAR-OLD FOUNDER</span>
+            <span class="hero-pill-tag accent-cyan">AUTONOMOUS SYSTEMS ARCHITECT</span>
+            <span class="hero-pill-tag">FULL-STACK ENGINEER</span>
+          </div>
+
+          <!-- Comic Speech Balloon with Character Dialogue -->
+          <div class="comic-speech-balloon">
+            Welcome to my command center! I am <strong>Sabhaym Trivedi</strong>, a 14-year-old software engineer and founder from Jharkhand, India. I forge autonomous agent swarms, high-throughput cloud engines, and real-time computer vision spatial systems powered by relentless curiosity, mathematics, and code.
+          </div>
+
+          <!-- Stark HUD Telemetry Readout Grid -->
+          <div class="stark-hud-telemetry">
+            <div class="telemetry-item">
+              <span class="telemetry-label">SYSTEM PROTOCOL</span>
+              <span class="telemetry-val">COMBAT READY</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">ARC REACTOR CORE</span>
+              <span class="telemetry-val">100% MAXIMUM YIELD</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">J.A.R.V.I.S. LINK</span>
+              <span class="telemetry-val">ONLINE & SYNCED</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">DEPLOYED ARMORS</span>
+              <span class="telemetry-val">PRODUCTION LIVE</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#armory" class="btn-comic-punch">INSPECT ARMORY</a>
+            <a href="#comms" class="btn-comic-punch btn-comic-crimson">TRANSMIT COMMS</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D WebGL Arc Reactor Stage -->
+        <div class="hero-3d-stage-container">
+          
+          <!-- Starburst Comic Badge -->
+          <div class="starburst-badge">
+            <div class="starburst-badge-text">POW!<br>3D CORE<br>ONLINE</div>
+          </div>
+
+          <!-- 3D Three.js Container -->
+          <div class="arc-reactor-3d-box">
+            <div id="arc-reactor-webgl-canvas"></div>
+          </div>
+
+          <div class="arc-interaction-hint">
+            HOVER TO TILT 3D CORE • CLICK CORE TO DISCHARGE REPULSOR
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ORIGIN STORY - 3 COMIC PANELS
+       ======================================================================== -->
+  <section id="origin" class="comic-section">
+    <div class="container">
+      
+      <div class="comic-section-heading-wrapper">
+        <span class="comic-section-tag">ORIGIN STORY // LOG ENTRY 001</span>
+        <h2 class="comic-section-title">HOW A 14-YEAR-OLD FORGED AN EMPIRE OF CODE</h2>
+        <p class="comic-section-desc">From first algorithmic principles to shipping production multi-agent architectures.</p>
+      </div>
+
+      <div class="comic-strip-container">
+        
+        <!-- Panel 1: Foundations -->
+        <article class="comic-panel-card">
+          <div class="panel-header-banner">
+            <span class="panel-chapter">PANEL I: THE WORKSHOP</span>
+            <span class="panel-year-badge">2022</span>
+          </div>
+          <div class="panel-art-frame">
+            <img src="assets/images/opt_c2e2_2015_contest_-_iron_man_17141417199.jpg" alt="First Lines of Code in the Workshop" class="panel-art-img">
+          </div>
+          <div class="panel-caption-narrative">
+            FIRST CIRCUITS & CODE ASSEMBLED IN SILENCE...
+          </div>
+          <div class="panel-content-body">
+            <h3 class="panel-headline">C++ & Python Foundations</h3>
+            <p class="panel-text">
+              Began self-directed immersion into computational logic, data structures, recursion, and algorithm design. Constructed competitive logic solvers and automated everyday workstation pipelines from first principles.
+            </p>
+          </div>
+        </article>
+
+        <!-- Panel 2: Spatial AI -->
+        <article class="comic-panel-card">
+          <div class="panel-header-banner">
+            <span class="panel-chapter">PANEL II: SPATIAL FLIGHT</span>
+            <span class="panel-year-badge">2023</span>
+          </div>
+          <div class="panel-art-frame">
+            <img src="assets/images/opt_iron_man_flying_render.webp" alt="Spatial Flight Computer Vision" class="panel-art-img">
+          </div>
+          <div class="panel-caption-narrative">
+            REPULSORS CALIBRATED FOR SPATIAL VISION...
+          </div>
+          <div class="panel-content-body">
+            <h3 class="panel-headline">Spatial Vision & 3D WebGL</h3>
+            <p class="panel-text">
+              Architected real-time hand-tracking computer vision interfaces with MediaPipe and 3D WebGL particle canvases. Converted raw physical fingertip coordinates into instant volumetric control without physical controllers.
+            </p>
+          </div>
+        </article>
+
+        <!-- Panel 3: Autonomous Swarms -->
+        <article class="comic-panel-card">
+          <div class="panel-header-banner">
+            <span class="panel-chapter">PANEL III: AUTONOMOUS CORE</span>
+            <span class="panel-year-badge">2024+</span>
+          </div>
+          <div class="panel-art-frame">
+            <img src="assets/images/arc_reactor_core.jpg" alt="Autonomous Multi-Agent Core" class="panel-art-img">
+          </div>
+          <div class="panel-caption-narrative">
+            FULL SUIT DEPLOYMENT: AGENTS SHIP AUTONOMOUSLY...
+          </div>
+          <div class="panel-content-body">
+            <h3 class="panel-headline">Autonomous Agent Systems</h3>
+            <p class="panel-text">
+              Engineered Spark2Ship (prompt-to-live SaaS generator) and Sabhyam AI (self-orchestrating agent architecture with MCP protocol bridges). Building production software that scales ideas into running systems in seconds.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STARK ARMORY - PRODUCTION PROJECTS (MARK SUITS)
+       ======================================================================== -->
+  <section id="armory" class="comic-section" style="background: rgba(10, 14, 22, 0.7);">
+    <div class="container">
+      
+      <div class="comic-section-heading-wrapper">
+        <span class="comic-section-tag">STARK ARMORY // WEAPONS & PROTOCOLS</span>
+        <h2 class="comic-section-title">CLASSIFIED BATTLE-TESTED SUITS</h2>
+        <p class="comic-section-desc">Production software systems engineered for rapid execution, resilience, and maximum speed.</p>
+      </div>
+
+      <div class="stark-projects-grid">
+        
+        <!-- Project 01: Spark2Ship -->
+        <div class="project-armor-card">
+          <div class="project-mark-banner">
+            <span class="project-mark-badge">MARK I: RAPID SAAS</span>
+            <div class="project-status-dot">
+              <span class="pulsing-dot"></span>
+              <span>LIVE</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Spark2Ship</h3>
+            <p class="project-desc">
+              Autonomous prompt-to-live SaaS deployment platform. Accepts a single conversational concept, synthesizes full-stack Next.js and FastAPI architectures, wires payment gateways with Stripe, and deploys live cloud endpoints in under 60 seconds.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Python FastAPI</span>
+              <span class="tech-tag">Gemini 2.5 Flash</span>
+              <span class="tech-tag">Stripe Billing</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/sabhyamtrivedycoder/Spark2Ship" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                INSPECT BLUEPRINTS &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 02: Sabhyam AI -->
+        <div class="project-armor-card">
+          <div class="project-mark-banner">
+            <span class="project-mark-badge">MARK II: AUTONOMOUS AGENT</span>
+            <div class="project-status-dot">
+              <span class="pulsing-dot"></span>
+              <span>ACTIVE</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Sabhyam AI</h3>
+            <p class="project-desc">
+              Digital twin and autonomous agent OS runtime. Connects multi-agent worker swarms across dedicated memory matrices, remote Model Context Protocol (MCP) data servers, live telemetry bridges, and self-verifying code review automation.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Antigravity Runtime</span>
+              <span class="tech-tag">MCP Protocol</span>
+              <span class="tech-tag">Multi-Agent Swarm</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/sabhyamtrivedycoder/sabhyam-ai" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                INSPECT BLUEPRINTS &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 03: Gesture Spatial Engine -->
+        <div class="project-armor-card">
+          <div class="project-mark-banner">
+            <span class="project-mark-badge">MARK III: SPATIAL HUD</span>
+            <div class="project-status-dot">
+              <span class="pulsing-dot"></span>
+              <span>60 FPS</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Gesture Spatial Engine</h3>
+            <p class="project-desc">
+              Real-time biometric and spatial computer vision tracking engine. Operates 60 FPS sub-millimeter finger tracking in browser canvas to manipulate 3D spatial geometry, repulsor particle vortexes, and HUD holographic layers with zero external sensors.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">MediaPipe Vision</span>
+              <span class="tech-tag">WebGL Particle 3D</span>
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">Canvas Shader</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/sabhyamtrivedycoder/gesture-spatial-engine" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                INSPECT BLUEPRINTS &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STARK ARMOR VAULT - HIGH RESOLUTION PHOTO GALLERY
+       ======================================================================== -->
+  <section id="vault" class="comic-section">
+    <div class="container">
+      
+      <div class="comic-section-heading-wrapper">
+        <span class="comic-section-tag">STARK ARMOR VAULT // HALL OF ARMOR</span>
+        <h2 class="comic-section-title">THE ARCHIVES OF IRON & TITANIUM</h2>
+        <p class="comic-section-desc">Click any classified armor specimen to inspect full high-definition schematics and Stark engineering notes.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="armor-gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">ALL ARMORS (12)</button>
+        <button class="gallery-filter-btn" data-filter="cinematic">CINEMATIC MARKS</button>
+        <button class="gallery-filter-btn" data-filter="heavy">HEAVY DUTY</button>
+        <button class="gallery-filter-btn" data-filter="comic">COMIC & EXHIBITIONS</button>
+      </div>
+
+      <!-- Armor Photo Masonry Grid -->
+      <div class="armor-photo-masonry">
+        
+        <!-- Photo 1: Mark III Classic -->
+        <div class="armor-photo-card" data-category="cinematic" data-desc="The iconic red and gold Mark III armor on display at the Stark Expo. Constructed from gold-titanium alloy to eliminate high-altitude freezing while preserving agile supersonic flight dynamics.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_iron_man_mark_iii.jpg" alt="Iron Man Mark III Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">MARK III EXPO SPECIMEN</h4>
+            <span class="armor-photo-spec">GOLD-TITANIUM ALLOY // SUPERSONIC</span>
+          </div>
+        </div>
+
+        <!-- Photo 2: Hulkbuster Heavy Duty -->
+        <div class="armor-photo-card" data-category="heavy" data-desc="Mark XLIV Hulkbuster Heavy Armor. Designed as an orbital drop modular exoskeleton to deliver overwhelming kinetic force and structural reinforcement in catastrophic conflict scenarios.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_2015_vermont_comic_con_cosplay_of_iron_man_hulkbuster_armor.jpg" alt="Hulkbuster Heavy Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">MARK XLIV HULKBUSTER</h4>
+            <span class="armor-photo-spec">HEAVY ARTILLERY // ORBITAL DROP</span>
+          </div>
+        </div>
+
+        <!-- Photo 3: Supersonic Flight -->
+        <div class="armor-photo-card" data-category="cinematic" data-desc="Full repulsor thrust vectoring during high-altitude vector maneuvers. Features dual palm repulsors and boot stabilizers outputting clean electromagnetic plasma propulsion.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_iron_man_flying_render.webp" alt="Iron Man Flight Mode" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">AERO FLIGHT VECTOR</h4>
+            <span class="armor-photo-spec">MACH 3.2 PROPULSION // REPULSOR THRUST</span>
+          </div>
+        </div>
+
+        <!-- Photo 4: 3D Arc Reactor Core -->
+        <div class="armor-photo-card" data-category="cinematic" data-desc="3D High-Tech Arc Reactor Core. Delivers clean, perpetual multi-gigawatt energy via palladium plasma confinement surrounded by holographic telemetry HUD diagnostic rings.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/arc_reactor_core.jpg" alt="Stark Arc Reactor Core" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">ARC REACTOR MK 1</h4>
+            <span class="armor-photo-spec">PERPETUAL ENERGY // 3 GIGAWATTS/SEC</span>
+          </div>
+        </div>
+
+        <!-- Photo 5: SDCC Mark Armor -->
+        <div class="armor-photo-card" data-category="comic" data-desc="San Diego Comic-Con Official Iron Man Armor Exhibit. High-precision full-scale fiberglass and composite alloy suit showcasing combat plating and recessed arc conduits.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_sdcc_2012_-_iron_man_7573609494.jpg" alt="San Diego Comic Con Iron Man" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">SDCC EXPO REPLICA</h4>
+            <span class="armor-photo-spec">FULL-SCALE ARMOR // SAN DIEGO EXHIBIT</span>
+          </div>
+        </div>
+
+        <!-- Photo 6: 2024 Museum Armor -->
+        <div class="armor-photo-card" data-category="cinematic" data-desc="2024 Worldwide Museum Exhibition Iron Man Armor. Preserved full-body combat armor highlighting aerodynamic chest plate curvature and helmet visor geometry.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_iron_mans_armor_2024_exhibition.jpg" alt="2024 Exhibition Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">2024 MUSEUM SPECIMEN</h4>
+            <span class="armor-photo-spec">CINEMATIC MASTER // RESTORED PLATING</span>
+          </div>
+        </div>
+
+        <!-- Photo 7: Silver Centurion -->
+        <div class="armor-photo-card" data-category="comic" data-desc="Mark XXI Silver Centurion. Legendary classic comic book armor with crimson and mirror silver aesthetic, engineered with enhanced thermal dissipation and stealth chaff deflectors.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/iron_man_comiccon_silver_armor.jpg" alt="Silver Centurion Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">SILVER CENTURION</h4>
+            <span class="armor-photo-spec">CHROME & CRIMSON // THERMAL SHIELD</span>
+          </div>
+        </div>
+
+        <!-- Photo 8: NYCC Heroic Armor -->
+        <div class="armor-photo-card" data-category="comic" data-desc="New York Comic Con 2023 Heroic Armor Display. Features motorized faceplate actuators, high-luminance LED eye optics, and reinforced chest arc housing.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_iron_man_at_nycc_2023.jpg" alt="New York Comic Con Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">NYCC 2023 EDITION</h4>
+            <span class="armor-photo-spec">MOTORIZED VISOR // DYNAMIC LED OPTICS</span>
+          </div>
+        </div>
+
+        <!-- Photo 9: Full Body Convention Suit -->
+        <div class="armor-photo-card" data-category="heavy" data-desc="Ultra high-resolution convention armor suit. Built with military-grade automotive finishes, gold-anodized faceplate, and illuminated forearm repulsors.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_iron_man_armor_13729296773.jpg" alt="Convention Battle Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">TACTICAL AVIONICS SUIT</h4>
+            <span class="armor-photo-spec">AUTOMOTIVE ENAMEL // REINFORCED JOINTS</span>
+          </div>
+        </div>
+
+        <!-- Photo 10: SDCC Close-Up Detail -->
+        <div class="armor-photo-card" data-category="cinematic" data-desc="Macro close-up inspection of chest reactor harness and shoulder micro-munition pods. Shows the exact bevels and panel seams of Stark aerospace manufacturing.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_sdcc_2012_-_iron_man_7573692958.jpg" alt="Armor Close-Up Plating" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">AEROSPACE CHASSIS</h4>
+            <span class="armor-photo-spec">SEAMLESS BEVELS // TITANIUM WEAVE</span>
+          </div>
+        </div>
+
+        <!-- Photo 11: Invincible Title Emblem -->
+        <div class="armor-photo-card" data-category="comic" data-desc="The Invincible Iron Man classic comic book header badge. The timeless Marvel graphic design emblem that defined decades of heroic storytelling and engineering ingenuity.">
+          <div class="armor-photo-wrapper" style="display: flex; align-items: center; justify-content: center; background: #000;">
+            <img src="assets/images/the_invincible_iron_man.png" alt="The Invincible Iron Man Title Mark" class="armor-photo-img" style="object-fit: contain; padding: 2rem;" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">THE INVINCIBLE MARVEL</h4>
+            <span class="armor-photo-spec">HERITAGE COMIC LOGO // SILVER AGE</span>
+          </div>
+        </div>
+
+        <!-- Photo 12: C2E2 Heavy Battle Armor -->
+        <div class="armor-photo-card" data-category="heavy" data-desc="C2E2 Contest-Winning Heavy Armor. Engineered with oversized chest reactor baffles and combat-hardened battle damage weathering for frontline resistance.">
+          <div class="armor-photo-wrapper">
+            <img src="assets/images/opt_c2e2_2015_contest_-_iron_man_17141417199.jpg" alt="C2E2 Heavy Armor" class="armor-photo-img" loading="lazy">
+          </div>
+          <div class="armor-photo-overlay">
+            <h4 class="armor-photo-title">C2E2 FRONT-LINE ARMOR</h4>
+            <span class="armor-photo-spec">BATTLE WEATHERED // HEAVY PLATING</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STARK INTEL ARCHIVES - 3D BOOKSHELF (EXACTLY 3 BOOKS)
+       ======================================================================== -->
+  <section id="intel" class="comic-section" style="background: rgba(10, 14, 22, 0.7);">
+    <div class="container">
+      
+      <div class="comic-section-heading-wrapper">
+        <span class="comic-section-tag">STARK INTEL ARCHIVES // CLASSIFIED VOLUMES</span>
+        <h2 class="comic-section-title">THE THREE TEXTS THAT PROGRAMMED MY MIND</h2>
+        <p class="comic-section-desc">Hover over any hardcover volume to swing it in 3D perspective, or click to extract architectural wisdom.</p>
+      </div>
+
+      <div class="stark-bookshelf-stage">
+        
+        <!-- Book 1: Steve Jobs -->
+        <div class="stark-book-item" data-book="steve-jobs" title="Click to inspect Steve Jobs by Walter Isaacson">
+          <div class="stark-book-cover">
+            <div class="stark-book-spine-accent"></div>
+            <img src="assets/books/steve-jobs.jpg" alt="Steve Jobs by Walter Isaacson">
+          </div>
+          <h4 class="stark-book-title-tag">STEVE JOBS</h4>
+          <span class="stark-book-author">WALTER ISAACSON</span>
+        </div>
+
+        <!-- Book 2: Zero to One -->
+        <div class="stark-book-item" data-book="zero-to-one" title="Click to inspect Zero to One by Peter Thiel">
+          <div class="stark-book-cover">
+            <div class="stark-book-spine-accent"></div>
+            <img src="assets/books/zero-to-one-cover.png" alt="Zero to One by Peter Thiel">
+          </div>
+          <h4 class="stark-book-title-tag">ZERO TO ONE</h4>
+          <span class="stark-book-author">PETER THIEL</span>
+        </div>
+
+        <!-- Book 3: Build, Don't Talk -->
+        <div class="stark-book-item" data-book="build-dont-talk" title="Click to inspect Build, Don't Talk by Raj Shamani">
+          <div class="stark-book-cover">
+            <div class="stark-book-spine-accent"></div>
+            <img src="assets/books/build-dont-talk-cover.png" alt="Build Don't Talk by Raj Shamani">
+          </div>
+          <h4 class="stark-book-title-tag">BUILD, DON'T TALK</h4>
+          <span class="stark-book-author">RAJ SHAMANI</span>
+        </div>
+
+      </div>
+
+      <!-- Holographic Shelf Pedestal -->
+      <div class="stark-shelf-pedestal"></div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STARK COMMS TRANSPONDER - CONTACT SECTION
+       ======================================================================== -->
+  <section id="comms" class="comic-section">
+    <div class="container">
+      
+      <div class="comic-section-heading-wrapper">
+        <span class="comic-section-tag">ENCRYPTED COMMS // DIRECT LINK</span>
+        <h2 class="comic-section-title">TRANSMIT TO SABHAYM TRIVEDI</h2>
+        <p class="comic-section-desc">Open an encrypted channel for collaboration, autonomous agent projects, or technical discussions.</p>
+      </div>
+
+      <div class="stark-comms-terminal">
+        <div class="terminal-header">
+          <span class="terminal-title">STARK TRANSPONDER FREQUENCY: 104.7 MHZ</span>
+          <span class="terminal-status-tag">SECURE ENCRYPTION ACTIVE</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-avatar-wrapper">
+            <img src="assets/logo-badge.png" alt="Official Sabhaym STI Logo Emblem" class="terminal-brand-logo">
+          </div>
+          <h3 class="terminal-greeting">SABHAYM TRIVEDI</h3>
+          <p class="terminal-desc">
+            14-year-old software engineer and founder from Jharkhand, India. Always eager to architect ambitious engineering projects, agent swarms, and high-performance software.
+          </p>
+
+          <div class="comms-direct-channel">
+            <span id="comms-email-text" class="comms-email-address">sabhyamtrivedy@gmail.com</span>
+            <button id="copy-comms-email-btn" class="comms-copy-btn">COPY TRANSMISSION ADDRESS</button>
+          </div>
+
+          <div>
+            <a href="https://github.com/sabhyamtrivedycoder" target="_blank" rel="noopener noreferrer" class="btn-comic-punch">
+              GITHUB REPOSITORY NETWORK &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER LEGAL
+       ======================================================================== -->
+  <footer class="stark-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <h3 class="footer-brand-title">SABHAYM TRIVEDI // THE INVINCIBLE ARCHITECT</h3>
+        <p class="footer-legal-text">
+          ALL RIGHTS RESERVED &bull; BUILT FROM SCRATCH WITH IRON MAN COMIC THEME &bull; ZERO EXTERNAL DEPENDENCIES &bull; JHARKHAND, INDIA
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       COMIC LIGHTBOX MODAL (PHOTO & BOOK INSPECTION)
+       ======================================================================== -->
+  <div id="comic-lightbox" class="comic-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <div class="lightbox-content-box">
+      <div class="lightbox-header">
+        <span id="lightbox-title" class="lightbox-title">STARK TECHNICAL ARCHIVE</span>
+        <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close modal">X</button>
+      </div>
+      <div class="lightbox-body">
+        <img id="lightbox-image" src="" alt="Stark Tech Schematic" class="lightbox-image">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Engine -->
+  <script src="main.js"></script>
+</body>
+</html>
